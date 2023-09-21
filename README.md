@@ -6,25 +6,31 @@ Before you begin, ensure you have met the following requirements:
 
 
 1-Create a virtual environment:
+
 	python -m venv venv
 
 2-Activate the virtual environment:
+
 	On Windows:
-		venv\Scripts\activate
+ 
+		source venv\Scripts\activate
 
 	On macOS and Linux:
 		source venv/bin/activate
 	
 3-Install the project dependencies:
+
 	pip install -r requirements.txt
 
 4-Apply database migrations:
+
 	python manage.py makemigrations
 	python manage.py migrate
 
 5-Creating a Superuser
 	To create a superuser with the username "admin" and password "admin," follow these steps:
 	In your project directory, run the following command:
+ 
 		python manage.py createsuperuser
 	Enter the following details when prompted:
 	Username: admin
@@ -34,6 +40,7 @@ Before you begin, ensure you have met the following requirements:
 
 
 Start the development server:
+
 		python manage.py runserver
 
 
