@@ -84,6 +84,7 @@ class CustomerPurchaseOrder(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     is_paid = models.BooleanField(default=False)
     is_completed = models.BooleanField(default=False)
+    transaction_number=models.CharField(max_length=100)
 
     def __str__(self):
         return f"Purchase Order #{self.id} by {self.user.username}"
